@@ -1,0 +1,10 @@
+{
+  "database": "C:\\Users\\peter\\OneDrive\\Desktop\\대학원\\연구\\patent_funnel_results_2016_2020_5y\\working.sqlite",
+  "database_bytes": 1160785920,
+  "database_mtime": 1792597924583584700,
+  "citation": "C:\\Users\\peter\\OneDrive\\Desktop\\대학원\\연구\\g_us_patent_citation.tsv.zip",
+  "citation_bytes": 2253788290,
+  "citation_mtime": 1792585943373241400,
+  "cutoff": "2025-12-31",
+  "version": 1
+}

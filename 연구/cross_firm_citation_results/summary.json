@@ -1,0 +1,88 @@
+{
+  "population_pairs": 3815,
+  "cutoff": "2025-12-31",
+  "original_funnel_settings": {
+    "cohort_start": "2016-01-01",
+    "cohort_end": "2020-12-31",
+    "history_start": "2010-01-01",
+    "cutoff": "2025-12-31",
+    "background_years": 5,
+    "follow_years": 5,
+    "utility_only": false
+  },
+  "anchor": "First observed joint patent filing date from original pair_first; not first eligible 2016-2020 co-patent.",
+  "direction": "A->B = A sole patent cites B sole patent. Citation direction, opposite to a knowledge-flow interpretation.",
+  "windows": "Calendar filing-year differences 0,1,2 versus 3,4,5; citing filing date strictly after first joint filing date.",
+  "patents": "Both endpoints have exactly one assignee ID in original stats. Relevant firms, all available filing years.",
+  "target_patent_timing": "Before and after first joint filing allowed; before-first counts provided separately.",
+  "time_proxy": "Citing patent filing date; not actual date a reference was added during examination.",
+  "edge_count": "Distinct (citing patent, cited patent), not raw rows or number of citing patents.",
+  "normalization": "Directional edge count divided by citing firm sole patent count within same window; denominator zero -> undefined.",
+  "asymmetry": "One-direction-only or both-positive-unequal counts; no statistical significance test.",
+  "relevant_solo_patent_count": 3077200,
+  "unique_citation_edges_total": 524239,
+  "edges_whose_cited_filing_postdates_citing_filing": 868,
+  "window_results": {
+    "0-2": {
+      "complete_pairs": 3815,
+      "both_zero": 2562,
+      "A_only": 329,
+      "B_only": 445,
+      "equal_positive": 52,
+      "both_positive_unequal": 427,
+      "A_greater": 502,
+      "B_greater": 699,
+      "pairs_with_any_citation": 1253,
+      "pairs_with_unequal_counts": 1201,
+      "pairs_with_one_direction_only": 774,
+      "pairs_with_both_firms_solo_patents": 3077,
+      "normalized_links_per_patent_comparison": {
+        "comparable_pairs": 3077,
+        "unequal": 1209,
+        "A_greater": 377,
+        "B_greater": 832,
+        "equal": 1868
+      }
+    },
+    "3-5": {
+      "complete_pairs": 3815,
+      "both_zero": 2625,
+      "A_only": 340,
+      "B_only": 371,
+      "equal_positive": 45,
+      "both_positive_unequal": 434,
+      "A_greater": 535,
+      "B_greater": 610,
+      "pairs_with_any_citation": 1190,
+      "pairs_with_unequal_counts": 1145,
+      "pairs_with_one_direction_only": 711,
+      "pairs_with_both_firms_solo_patents": 2658,
+      "normalized_links_per_patent_comparison": {
+        "comparable_pairs": 2658,
+        "unequal": 1112,
+        "A_greater": 371,
+        "B_greater": 741,
+        "equal": 1546
+      }
+    },
+    "0-5": {
+      "complete_pairs": 3815,
+      "both_zero": 2292,
+      "A_only": 374,
+      "B_only": 475,
+      "equal_positive": 58,
+      "both_positive_unequal": 616,
+      "A_greater": 640,
+      "B_greater": 825,
+      "pairs_with_any_citation": 1523,
+      "pairs_with_unequal_counts": 1465,
+      "pairs_with_one_direction_only": 849
+    }
+  },
+  "limitations": [
+    "Assignee-name heuristic and unresolved duplicate-company IDs inherited from original funnel.",
+    "Only available granted patents; earliest recorded joint filing need not be real first collaboration.",
+    "Calendar maturity does not remove grant/publication lag or missing historical documents.",
+    "Both-zero citation counts are distinct from having no sole patent output; denominators exported."
+  ]
+}
