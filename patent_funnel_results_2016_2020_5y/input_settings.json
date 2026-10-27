@@ -1,0 +1,34 @@
+{
+  "settings": {
+    "cohort_start": "2016-01-01",
+    "cohort_end": "2020-12-31",
+    "history_start": "2010-01-01",
+    "cutoff": "2025-12-31",
+    "background_years": 5,
+    "follow_years": 5,
+    "utility_only": false
+  },
+  "files": {
+    "g_patent": {
+      "path": "C:\\Users\\peter\\OneDrive\\Desktop\\대학원\\연구\\g_patent.tsv.zip",
+      "bytes": 303567667,
+      "mtime_ns": 1792591671819206400
+    },
+    "g_application": {
+      "path": "C:\\Users\\peter\\OneDrive\\Desktop\\대학원\\연구\\g_application.tsv.zip",
+      "bytes": 71601386,
+      "mtime_ns": 1792591656273794600
+    },
+    "g_assignee_disambiguated": {
+      "path": "C:\\Users\\peter\\OneDrive\\Desktop\\대학원\\연구\\g_assignee_disambiguated.tsv (1).zip",
+      "bytes": 362741666,
+      "mtime_ns": 1792555790827455800
+    },
+    "g_us_patent_citation": {
+      "path": "C:\\Users\\peter\\OneDrive\\Desktop\\대학원\\연구\\g_us_patent_citation.tsv.zip",
+      "bytes": 2253788290,
+      "mtime_ns": 1792585943373241400
+    }
+  },
+  "code_version": 1
+}
